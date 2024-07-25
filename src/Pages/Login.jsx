@@ -21,7 +21,7 @@ const Login = ({ func }) => {
         e.preventDefault();
         try {
             setLoading(true)
-            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/login`, {
+            const response = await fetch(`https://jobportal-backend-five.vercel.app/login`, {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json"
