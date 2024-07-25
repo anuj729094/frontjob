@@ -76,7 +76,7 @@ export const getuser = (token) => async (dispatch) => {
         dispatch({
             type:"getuserpending"
         })
-        const data = await fetch(`${import.meta.env.VITE_BACKEND_URL}/getuser`, {
+        const data = await fetch(`https://jobportal-backend-five.vercel.app/getuser`, {
             method: "GET",
             headers: {
                 token: token,
